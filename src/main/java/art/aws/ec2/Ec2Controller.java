@@ -14,8 +14,8 @@ public class Ec2Controller {
     @GetMapping
     public ResponseEntity<?> getAll() {
         com.google.gson.JsonObject json = new JsonObject();
-        json.addProperty("region", "eu-central-1");
-        json.addProperty("avZone", "eu-central-1a");
+        json.addProperty("region", "us-central-1");
+        json.addProperty("avZone", "us-central-1a");
         return new ResponseEntity<>(json.toString(), HttpStatus.OK);
     }
 }
